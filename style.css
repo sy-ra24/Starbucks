@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+
+
+
 section{
     position: relative;
     width: 100%;
@@ -15,6 +19,11 @@ section{
     align-items: center;
     background: #fff;
 }
+
+/*-----------------------Start of header -----------------------*/
+
+
+
 header{
     position: absolute;
     top: 0px;
@@ -43,6 +52,16 @@ header ul li a{
     margin-left: 40px;
     text-decoration: none;
 }
+
+ header ul li a:hover{
+    color:#017143
+}
+/*-----------------------end of header-----------------------*/
+
+
+
+/*-----------------------star of landing page-----------------------*/
+
 .content{
     position: relative;
     width: 100%;
@@ -83,16 +102,40 @@ header ul li a{
     width: 600px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 50px;
+    padding-right: 0px;
     margin-top: 50px;
+   
 }
 .imgBox img{
     max-width: 340px;
+ 
 }
+
+
+
+.imgBox img{
+    -webkit-animation: mover 0.5s infinite  alternate;
+    animation: mover 0.5s infinite  alternate;
+}
+.imgBox img {
+    -webkit-animation: mover 0.5s infinite  alternate;
+    animation: mover 0.5s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
+
 .thumb{
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    bottom: -25px;
     transform: translate(-50%);
     display: flex;
 }
@@ -107,7 +150,7 @@ header ul li a{
     transform: translateY(-15px);
 }
 .thumb li img{
-    max-width: 60px;
+    max-width: 111px;
 }
 .sci{
     position: relative;
@@ -144,44 +187,12 @@ header ul li a{
     margin:auto;
     padding: 0%;
 }
+  /*-----------------------end of landing page-----------------------*/
 
-/*
 
-.footer_division{
-   display: flex;
-   background-color: #0e382c;
-    padding: 4em 26em 6em;
-    
 
-}
+  
 
-.use-links li {
-    color: white;
-    padding:0px 40px 0px 40px;
-
-    
-}
-.use-links ul {
-    list-style: none;
-    
-    
-}
-
-.search-form[_ngcontent-nse-c104] .form-input[_ngcontent-nse-c104] {
-    text-indent: 33px;
-}
-
-.custom-search-box[_ngcontent-nse-c104] {
-    border-radius: 1.25rem;
-    box-shadow: 0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;
-    border: none;
-}
-
-.cont{
-    color:#0e382c;
-    font-family: Arial, Helvetica, sans-serif;
-}
-*/
 
 .next{
     margin:40px 40px 40px 40px;
@@ -265,8 +276,80 @@ margin:30px 30px 30px 30px;
     font-size: 17px;
     background-color:#e2f3ed;
     border-radius: 1.25rem;
-    box-shadow: 0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;
+   border-color: white;
+  }
+
+  .space{
+    display:flex; 
+    padding:0 0px;
   }
   
+  .button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-color: white;
+  }
+
+ 
+  /* Footer Styles */
+footer {
+    background-color: #1e3932;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-column h3 {
+    color:white;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column a {
+    color:white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column a:hover {
+    color: #000;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    color:white;
+    font-size: 14px;
+  }
   
   
